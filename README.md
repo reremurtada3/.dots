@@ -1,1 +1,27 @@
 # .dots
+
+
+
+## Git 
+``` bash
+
+``` bash
+git init
+git remote add origin REMOTEURL
+git pull origin main
+``` 
+```
+```
+```
+```
+```
+```
+
+
+
+
+```
+```
+```
+```
+```
