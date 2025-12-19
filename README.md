@@ -17,9 +17,12 @@ git pull origin main
 ```
 ```
 
+## Vim 
 
 
-
+```Vim
+s/oldword/newword/g
+```
 ```
 ```
 ```
