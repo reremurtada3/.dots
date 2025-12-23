@@ -3,15 +3,24 @@
 
 
 ## Git 
---
+
 ``` bash
-git init
-git remote add origin REMOTEURL
-git pull origin main
+  git init
+  git remote add origin REMOTEURL
+  git pull origin main
 ```
 
 ## Vim 
---
+
 ```Vim
-s/oldword/newword/g
+  %s/oldword/newword/g
+```
+
+## Finding keys
+```bash
+  wev
+```
+```
+```
+```
 ```

@@ -1,0 +1,9 @@
+
+
+{
+
+  "logo":{
+    "type": "file",
+    "source": "/home/poleaxe/.dot/asciis/ascii-art.txt"
+  }
+}
