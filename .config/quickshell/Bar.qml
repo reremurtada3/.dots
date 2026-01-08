@@ -1,3 +1,4 @@
+// Bar.qml
 import Quickshell
 import Quickshell.Io
 import QtQuick
@@ -6,43 +7,43 @@ Scope {
   id: root
   property string time
 
-  Variants{
+  Variants {
     model: Quickshell.screens
 
+    PanelWindow {
+      required property var modelData
+      screen: modelData
 
-      PanelWindow {
-        required property var modelData
-        screen: modelData
-        
-        anchors {
-          top: true
-          left: true
-          right: true
-        }
-        implicitHeight: 30
-
-        ClockWidget{
-          anchors.centerIn: parent
-          text: root.time
-        }
+      anchors {
+        top: true
+        left: true
+        right: true
       }
 
+      implicitHeight: 30
+
+      // the ClockWidget type we just created
+      ClockWidget {
+        anchors.centerIn: parent
+        time: root.time
+      }
+    }
   }
+
   Process {
     id: dateProc
     command: ["date"]
     running: true
 
     stdout: StdioCollector {
-      onStreamFinished: root.text = this.text 
+      onStreamFinished: root.time = this.text
     }
   }
-//infinate 1 second loop
-  Timer { 
-    interval: 1000 // 1k millisecond
-    running: true 
-    repeat: true 
-    onTriggered: dateProc.running = true //when triggered, date updates
+
+  Timer {
+    interval: 1000
+    running: true
+    repeat: true
+    onTriggered: dateProc.running = true
   }
 }
-

@@ -1,17 +1,24 @@
-#
 # ~/.bashrc
-#
-# Alaises
-# Shell Functions
-# custom prompts
-# enviromental vairables
 
+##################
+#    Alaises     #
+##################
+
+alias da='date "+%A, %B %d, %Y [%T]"'
+#command that cd + ls
+cl() {
+  local dir="$1"
+  local dir="${dir:=$HOME}"
+  if [[ -d "$dir" ]]; then
+    cd "$dir" >/dev/null
+    ls
+  else
+    echo "bash: cl: $dir: Directory not found"
+  fi
+}
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-PS1='[\u@\h \W]\$ '
-
 eval "$(zoxide init bash)"
 eval "$(fzf --bash)"
+eval "$(oh-my-posh init bash --config $HOME/ohmyposh/M365Princess.omp.json)"
