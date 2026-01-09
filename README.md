@@ -27,14 +27,13 @@
 ```bash 
 locale-gen
 ```
-
-```
-```
-```
-```
 * Go to hypr config file and go to input
-* add desired language to the kb_layout along side english
-* (optional), add keybind by adding the next code
+* add desired language to the kb_layout along side English
+* (optional), add keybind by adding the next code to the input function
 ```bash
 kb_options=grp:win_space_toggle
 ```
+
+## Markdown
+
+
