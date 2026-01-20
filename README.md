@@ -1,6 +1,37 @@
 # .dots
 
 
+### basic configs
+```bash
+sudo nmcli dev wifi connect "wifiname" password "wifipassword"
+```
+
+### Network Manager
+```bash
+nmtui
+nmcli
+```
+
+### Update packages
+```bash
+sudo pacman -Syu
+```
+### Installing yay
+```bash
+cd $HOME/Documents/github
+git clone https://aur.archlinux.org/yay.git
+```
+```bash
+cd yay
+makepkg -si 
+```
+### apps I use
+```bash
+sudo pacman -S --needed hyprpaper waybar hyprlock hypridle keyd mpd rmpc neovim rofi swaync qt6ct tmux wev wl-clip-persist kvantum networkmanager network-manager-applet nemo brightnessctl hyprpicker gimp gmic gimp-plugin-gmic ghostscript gsfonts mypaint-brushes imagemagick nodejs npm clang docker xorg-xhost ufw openssh unzip git base-devel fastfetch stow noto-fonts-emoji usbutils libreoffice-fresh zip kicad kicad-library kicad-library-3d virt-manager qemu-desktop edk2-ovmf sl firefox discord kitty cmake
+```
+```bash
+yay -S wlogout hyprshot gimp-plugin-resynthesizer docker-buildx webapp-manager zen-browser-bin spotify
+```
 
 ## Git 
 

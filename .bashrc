@@ -1,23 +1,15 @@
 # ~/.bashrc
 
+fastfetch
+
 ##################
 #    Alaises     #
 ##################
 
 alias da='date "+%A, %B %d, %Y [%T]"'
-#command that cd + ls
-cl() {
-  local dir="$1"
-  local dir="${dir:=$HOME}"
-  if [[ -d "$dir" ]]; then
-    cd "$dir" >/dev/null
-    ls
-  else
-    echo "bash: cl: $dir: Directory not found"
-  fi
-}
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
+alias cd='cd && ls -a'
+alias gu='git add . && git commit -m'
+alias clear='clear && fastfetch'
 
 eval "$(zoxide init bash)"
 eval "$(fzf --bash)"
