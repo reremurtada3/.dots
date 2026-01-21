@@ -71,4 +71,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 ## Markdown
 
-
+## Pacman list downloaded packages
+```bash
+pacman -Qqe > package_list.txt
+```
