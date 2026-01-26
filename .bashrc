@@ -7,7 +7,7 @@ fastfetch
 ##################
 
 alias da='date "+%A, %B %d, %Y [%T]"'
-alias cd='cd && ls -a'
+alias cl='cd && ls -a'
 alias gu='git add . && git commit -m'
 alias clear='clear && fastfetch'
 

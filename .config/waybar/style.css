@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: bigblueterminal;
+    font-family: BigBlueTerm437 Nerd Font;
     font-size: 13px;
 }
 
@@ -32,15 +32,8 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
-button:hover {
-    background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
-}
-
-
 #workspaces button {
     padding: 0 5px;
-    background-color: rgba(43, 48, 59, 0.5);
     color: #ffffff;
 }
 
@@ -48,9 +41,8 @@ button:hover {
     background: rgba(0, 0, 0, 0.2);
 }
 
-#workspaces button.focused {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+#workspaces button.active {
+    color: #69b7e0;
 }
 
 #workspaces button.urgent {
