@@ -1,34 +1,116 @@
 {
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
-  "modules": [
-    "title",
-    "separator",
-    "os",
-    "host",
-    "cpu",
-    "uptime",
+    "logo": { /* Logo configuration */ 
+      "source": "/home/poleaxe/Downloads/logoferrari3.png",
+  
+      "padding": {
+        "top": 1
+      }
+    },
+"display": {
+"separator": " 󰑃  " // Icon to separate keys from values
+},
+// Main visual modules
+"modules": [
+"break",
+"break",
+// 🌈 Top Rainbow Bar
+{
+  "type": "custom",
+  "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m  \u001b[38m  \u001b[39m  \u001b[39m    \u001b[38m  \u001b[37m  \u001b[36m  \u001b[35m  \u001b[34m  \u001b[33m  \u001b[32m  \u001b[31m  \u001b[90m"
+},
+"break",
+// 🖥️ OS and Packages
+{
+  "type": "os",
+  "key": " DISTRO",
+  "keyColor": "#f6ff45"
+},
+{
+  "type": "packages",
+  "key": "│ ├󰏖 Packages",
+  "keyColor": "#f6ff45"
+},
+{
+  "type": "command",
+  "key": "│ ├ Installed Since",
+  "keyColor": "#f6ff45",
+  "text": "birth=$(stat -c %W / 2>/dev/null); [ \"$birth\" -eq 0 ] && echo unknown || echo $(( ($(date +%s) - birth) / 86400 )) days"
+},
+{
+  "type": "shell",
+  "key": "│ └ Shell",
+  "keyColor": "#f6ff45"
+},
+"break",
+// 🪟 Desktop and Appearance
+{
+  "type": "wm",
+  "key": " DE/WM",
+  "keyColor": "#334eff"
+},
+{
+  "type": "wmtheme",
+  "key": "│ ┌󰉼 Theme",
+  "keyColor": "#334eff"
+},
+{
+  "type": "icons",
+  "key": "│ ├󰀻 Icons",
+  "keyColor": "#334eff"
+},
+{
+  "type": "terminalfont",
+  "key": "│ ├🗚 Term Font",
+  "keyColor": "#334eff"
+},
+{
+  "type": "terminal",
+  "key": "│ ├ Terminal",
+  "keyColor": "#334eff"
+},
+{
+  "type": "command",
+  "key": "│ ├ Git User",
+  "keyColor": "#334eff",
+  "text": "git config --global user.name || echo 'N/A'"
+},
+"break",
+// 🧠 Hardware Info
+{
+  "type": "host",
+  "key": "󰌢 SYSTEM",
+  "keyColor": "#32fa3c"
+},
+{
+  "type": "display",
+  "key": "│ ├󰍹 Display",
+  "keyColor": "#32fa3c",
+  "compactType": "original-with-refresh-rate"
+},
+{
+  "type": "memory",
+  "key": "│ ├󰾆 Memory",
+  "keyColor": "#32fa3c"
+},
+{
+  "type": "gpu",
+  "key": "│ ├󰻑 GPU",
+  "keyColor": "#32fa3c"
 
+ },
+{
+  "type": "cpu",
+  "key": "│ ├󰻠 CPU",
+  "keyColor": "#32fa3c"
 
-    "display",
-    "de",
-
-    "wmtheme",
-    "theme",
-    "icons",
-    "font",
- 
-
-    "terminalfont",
-
-    "gpu",
-
-    "swap",
-    "disk",
-
-
-    "poweradapter",
-    "locale",
-    "break",
-
-  ]
+ },
+"break",
+// 🌈 Bottom Rainbow Bar
+{
+  "type": "custom",
+  "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m  \u001b[38m  \u001b[39m  \u001b[39m    \u001b[38m  \u001b[37m  \u001b[36m  \u001b[35m  \u001b[34m  \u001b[33m  \u001b[32m  \u001b[31m  \u001b[90m"
+},
+"break",
+]
 }
+   

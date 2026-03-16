@@ -75,3 +75,8 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```bash
 pacman -Qqe > package_list.txt
 ```
+
+## Root
+```bash
+sudo su
+```
