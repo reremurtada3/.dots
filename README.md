@@ -45,6 +45,10 @@ yay -S wlogout hyprshot gimp-plugin-resynthesizer docker-buildx webapp-manager z
 
 ```Vim
   %s/oldword/newword/g
+### for escape keys
+  ```bash
+  %s/\\/newword/g
+```
 ```
 
 ## Finding keys

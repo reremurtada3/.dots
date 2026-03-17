@@ -1,116 +1,153 @@
-{
+ {
     "logo": { /* Logo configuration */ 
-      "source": "/home/poleaxe/Downloads/logoferrari3.png",
+      "source": "/home/poleaxe/Downloads/ferrari2.png",
   
       "padding": {
-        "top": 1
+        "top": 2,
+       "right": 1
       }
     },
-"display": {
-"separator": " 󰑃  " // Icon to separate keys from values
-},
-// Main visual modules
-"modules": [
-"break",
-"break",
-// 🌈 Top Rainbow Bar
-{
-  "type": "custom",
-  "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m  \u001b[38m  \u001b[39m  \u001b[39m    \u001b[38m  \u001b[37m  \u001b[36m  \u001b[35m  \u001b[34m  \u001b[33m  \u001b[32m  \u001b[31m  \u001b[90m"
-},
-"break",
-// 🖥️ OS and Packages
-{
-  "type": "os",
-  "key": " DISTRO",
-  "keyColor": "#f6ff45"
-},
-{
-  "type": "packages",
-  "key": "│ ├󰏖 Packages",
-  "keyColor": "#f6ff45"
-},
-{
-  "type": "command",
-  "key": "│ ├ Installed Since",
-  "keyColor": "#f6ff45",
-  "text": "birth=$(stat -c %W / 2>/dev/null); [ \"$birth\" -eq 0 ] && echo unknown || echo $(( ($(date +%s) - birth) / 86400 )) days"
-},
-{
-  "type": "shell",
-  "key": "│ └ Shell",
-  "keyColor": "#f6ff45"
-},
-"break",
-// 🪟 Desktop and Appearance
-{
-  "type": "wm",
-  "key": " DE/WM",
-  "keyColor": "#334eff"
-},
-{
-  "type": "wmtheme",
-  "key": "│ ┌󰉼 Theme",
-  "keyColor": "#334eff"
-},
-{
-  "type": "icons",
-  "key": "│ ├󰀻 Icons",
-  "keyColor": "#334eff"
-},
-{
-  "type": "terminalfont",
-  "key": "│ ├🗚 Term Font",
-  "keyColor": "#334eff"
-},
-{
-  "type": "terminal",
-  "key": "│ ├ Terminal",
-  "keyColor": "#334eff"
-},
-{
-  "type": "command",
-  "key": "│ ├ Git User",
-  "keyColor": "#334eff",
-  "text": "git config --global user.name || echo 'N/A'"
-},
-"break",
-// 🧠 Hardware Info
-{
-  "type": "host",
-  "key": "󰌢 SYSTEM",
-  "keyColor": "#32fa3c"
-},
-{
-  "type": "display",
-  "key": "│ ├󰍹 Display",
-  "keyColor": "#32fa3c",
-  "compactType": "original-with-refresh-rate"
-},
-{
-  "type": "memory",
-  "key": "│ ├󰾆 Memory",
-  "keyColor": "#32fa3c"
-},
-{
-  "type": "gpu",
-  "key": "│ ├󰻑 GPU",
-  "keyColor": "#32fa3c"
-
- },
-{
-  "type": "cpu",
-  "key": "│ ├󰻠 CPU",
-  "keyColor": "#32fa3c"
-
- },
-"break",
-// 🌈 Bottom Rainbow Bar
-{
-  "type": "custom",
-  "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m  \u001b[38m  \u001b[39m  \u001b[39m    \u001b[38m  \u001b[37m  \u001b[36m  \u001b[35m  \u001b[34m  \u001b[33m  \u001b[32m  \u001b[31m  \u001b[90m"
-},
-"break",
-]
-}
-   
+   "modules": [
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[102m┌──────────────────────Hardware──────────────────────┐"
+    },
+    {
+      "type": "host",
+      "key": " PC",
+      "keyColor": "#e8dd0e"
+    },
+    {
+      "type": "cpu",
+      "key": "│ ├",
+      "showPeCoreCount": true,
+      "keyColor": "#e8dd0e"
+    },
+    {
+      "type": "gpu",
+      "key": "│ ├",
+      "detectionMethod": "pci",
+      "keyColor": "#e8dd0e"
+    },
+    {
+      "type": "display",
+      "key": "│ ├󱄄",
+      "keyColor": "#e8dd0e"
+    },
+    {
+      "type": "disk",
+      "key": "│ ├󰋊",
+      "keyColor": "#e8dd0e"
+    },
+    {
+      "type": "memory",
+      "key": "│ ├",
+      "keyColor": "#e8dd0e"
+    },
+    {
+      "type": "swap",
+      "key": "└ └󰓡 ",
+      "keyColor": "#e8dd0e"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[90m┌──────────────────────Software──────────────────────┐"
+    },
+    {
+      "type": "command",
+      "key": "\ue900 OS",
+      "keyColor": "#019952",
+      "text": "version=$(omarchy-version); echo \"Omarchy $version\""
+    },
+    {
+      "type": "command",
+      "key": "│ ├󰘬",
+      "keyColor": "#019952",
+      "text": "branch=$(omarchy-version-branch); echo \"$branch\""
+    },
+    {
+      "type": "command",
+      "key": "│ ├󰔫",
+      "keyColor": "#019952",
+      "text": "channel=$(omarchy-version-channel); echo \"$channel\""
+    },
+    {
+      "type": "kernel",
+      "key": "│ ├",
+      "keyColor": "#019952"
+    },
+    {
+      "type": "wm",
+      "key": "│ ├",
+      "keyColor": "#019952"
+    },
+    {
+      "type": "de",
+      "key": " DE",
+      "keyColor": "#019952"
+    },
+    {
+      "type": "terminal",
+      "key": "│ ├",
+      "keyColor": "#019952"
+    },
+    {
+      "type": "packages",
+      "key": "│ ├󰏖",
+      "keyColor": "#019952"
+    },
+    {
+      "type": "wmtheme",
+      "key": "│ ├󰉼",
+      "keyColor": "#019952"
+    },
+    {
+      "type": "command",
+      "key": "│ ├󰸌",
+      "keyColor": "#019952",
+      "text": "theme=$(omarchy-theme-current); echo -e \"$theme \\e[38m●\\e[37m●\\e[36m●\\e[35m●\\e[34m●\\e[33m●\\e[32m●\\e[31m●\""
+    },
+    {
+      "type": "terminalfont",
+      "key": "└ └",
+      "keyColor": "#019952"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[90m┌────────────────Age / Uptime / Update───────────────┐"
+    },
+    {
+      "type": "command",
+      "key": "󱦟 OS Age",
+      "keyColor": "#db194f",
+      "text": "echo $(( ($(date +%s) - $(stat -c %W /)) / 86400 )) days"
+    },
+    {
+      "type": "uptime",
+      "key": "󱫐 Uptime",
+      "keyColor": "#db194f"
+    },
+    {
+      "type": "command",
+      "key": " Update",
+      "keyColor": "#db194f",
+      "text": "updated=$(omarchy-version-pkgs); echo \"$updated\""
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+    },
+    "break"
+  ]
+} 
