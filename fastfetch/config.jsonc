@@ -1,6 +1,7 @@
  {
     "logo": { /* Logo configuration */ 
-      "source": "/home/poleaxe/Downloads/ferrari2.png",
+     "type": "file",
+      "source": "/home/poleaxe/ansiLogo/ferraricar.ansi",
   
       "padding": {
         "top": 2,
