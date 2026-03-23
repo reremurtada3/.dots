@@ -84,3 +84,11 @@ pacman -Qqe > package_list.txt
 ```bash
 sudo su
 ```
+
+## How to properly uninstall lazyvim
+```bash
+rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.cache/nvim
+```

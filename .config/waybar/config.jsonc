@@ -100,7 +100,7 @@
         // }
     },
     "clock": {
-        "format": "{:%e/%m %H:%M}",
+        "format": "{:%m/%e %H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
