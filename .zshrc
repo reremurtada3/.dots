@@ -37,8 +37,38 @@ alias gitup='git add . && git commit -m'
 alias z='clear && z'
 alias platio='source ~/.platformio/penv/bin/activate'
 
-pio-init(){
-    # Add starter file if none exists
+# Example: pio-init Project-name --board uno
+pio-init() {
+  if [[ -z "$1" ]]; then
+    echo "Usage: pio-init <project_name> [pio args]"
+    return 1
+  fi
+
+  PROJECT_NAME="$1"
+  shift  # remove project name so rest go to pio
+
+  mkdir -p "$PROJECT_NAME"
+  cd "$PROJECT_NAME" || return 1
+  echo "📂 Created project: $PROJECT_NAME"
+
+  pio project init "$@" || return 1
+  pio run -t compiledb || return 1
+
+  ENV_NAME=$(grep -oP '(?<=\[env:).*(?=\])' platformio.ini | head -n1)
+  SRC_ENV=".pio/build/$ENV_NAME/compile_commands.json"
+  SRC_ROOT="compile_commands.json"
+  DEST="compile_commands.json"
+
+  if [[ -f "$SRC_ENV" ]]; then
+    ln -sf "$SRC_ENV" "$DEST"
+    echo "✅ Linked compile_commands.json from $SRC_ENV"
+  elif [[ -f "$SRC_ROOT" ]]; then
+    echo "✅ compile_commands.json already in project root"
+  else
+    echo "⚠️ compile_commands.json not found. Try: pio run -t compiledb again"
+  fi
+
+  # Add starter file if none exists
   if [[ ! -f "src/main.cpp" ]]; then
     cat <<'EOF' > src/main.cpp
 #include <Arduino.h>
