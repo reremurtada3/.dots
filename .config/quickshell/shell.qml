@@ -13,7 +13,7 @@ PanelWindow {
   //
   implicitHeight: 30
   
-  color:"#4D000000"
+//  color:"#4D000000"
 
     RowLayout {
       
@@ -24,7 +24,6 @@ PanelWindow {
         model: 5
 
         Rectangle{
-          anchors.top: true
          
           Text {
             property var ws: Hyprland.workspaces.values.find(w => w.id === index + 1)
