@@ -5,23 +5,23 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#0077c2",
-          "foreground": "#ffffff",
+          "background": "#59323C",
+          "foreground": "#faecd2",
           "leading_diamond": "\u256d\u2500\ue0b6",
           "style": "diamond",
           "template": "\uf120 {{ .Name }} ",
           "type": "shell"
         },
         {
-          "background": "#ef5350",
-          "foreground": "#FFFB38",
+          "background": "#A63841",
+          "foreground": "#faecd2",
           "style": "diamond",
           "template": "<parentBackground>\ue0b0</> \uf292 ",
           "type": "root"
         },
         {
-          "background": "#FF9248",
-          "foreground": "#2d3436",
+          "background": "#A63841",
+          "foreground": "#faecd2",
           "powerline_symbol": "\ue0b0",
           "options": {
             "folder_icon": " \uf07b ",
@@ -52,8 +52,8 @@
           "type": "git"
         },
         {
-          "background": "#83769c",
-          "foreground": "#ffffff",
+          "background": "#a8585e",
+          "foreground": "#faecd2",
           "options": {
             "style": "roundrock",
             "threshold": 0
@@ -70,7 +70,7 @@
       "alignment": "right",
       "segments": [
         {
-          "background": "#303030",
+          "background": "#302a40",
           "foreground": "#3C873A",
           "leading_diamond": "\ue0b6",
           "options": {
@@ -84,7 +84,7 @@
           "type": "node"
         },
         {
-          "background": "#306998",
+          "background": "#302a40",
           "foreground": "#FFE873",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
@@ -93,8 +93,8 @@
           "type": "python"
         },
         {
-          "background": "#0e8ac8",
-          "foreground": "#ffffff",
+          "background": "#302a40",
+          "foreground": "#faecd2",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
           "template": "\ue738 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}",
@@ -111,7 +111,7 @@
           "type": "dotnet"
         },
         {
-          "background": "#ffffff",
+          "background": "#faecd2",
           "foreground": "#06aad5",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
@@ -138,7 +138,7 @@
           "type": "dart"
         },
         {
-          "background": "#ffffff",
+          "background": "#faecd2",
           "foreground": "#ce092f",
           "leading_diamond": " \ue0b6",
           "style": "diamond",
@@ -147,7 +147,7 @@
           "type": "angular"
         },
         {
-          "background": "#ffffff",
+          "background": "#faecd2",
           "foreground": "#de1f84",
           "leading_diamond": " \ue0b6",
           "style": "diamond",
@@ -157,7 +157,7 @@
         },
         {
           "background": "#1e293b",
-          "foreground": "#ffffff",
+          "foreground": "#faecd2",
           "leading_diamond": " \ue0b6",
           "style": "diamond",
           "template": "{{ if .Error }}{{ .Error }}{{ else }}Nx {{ .Full }}{{ end }}",
@@ -174,7 +174,7 @@
           "type": "julia"
         },
         {
-          "background": "#ffffff",
+          "background": "#faecd2",
           "foreground": "#9c1006",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
@@ -183,7 +183,7 @@
           "type": "ruby"
         },
         {
-          "background": "#ffffff",
+          "background": "#faecd2",
           "foreground": "#5398c2",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
@@ -202,7 +202,7 @@
         },
         {
           "background": "#316ce4",
-          "foreground": "#ffffff",
+          "foreground": "#faecd2",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
           "template": "\uf308 {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}",
@@ -210,7 +210,7 @@
           "type": "kubectl"
         },
         {
-          "background": "#b2bec3",
+          "background": "#f9e2a8",
           "foreground": "#222222",
           "leading_diamond": "\ue0b6",
           "trailing_diamond": "<transparent,background>\ue0b2</>",
@@ -243,8 +243,8 @@
           "type": "battery"
         },
         {
-          "background": "#40c4ff",
-          "foreground": "#ffffff",
+          "background": "#56abe3",
+          "foreground": "#262626",
           "invert_powerline": true,
           "leading_diamond": "\ue0b2",
           "options": {

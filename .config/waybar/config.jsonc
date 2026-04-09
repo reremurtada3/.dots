@@ -112,7 +112,7 @@
         "format-linked": "{ifname} (No IP)",
         "format-disconnected": "Disconnected ⚠",
         "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
-        "on-click": "nmtui"
+        "on-click": "kitty -e nmtui"
 
     },
     "pulseaudio": {
@@ -124,8 +124,8 @@
         "format-icons": {
             "headphone": "",
             "default": ["", "", ""],
-            "on-click": "bluetui"
         },
+        "on-click": "kitty -e bluetui"
     },
   "custom/power": {
     "format" : "⏻ ",

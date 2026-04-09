@@ -10,24 +10,22 @@ window#waybar{
 }
 
 .modules-right {
-    padding: 10px;
+    padding: 0px;
     margin: 5 10 5 0;
-    border-radius:10px;
-    background: rgba(43, 48, 59, 0.5);
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
 }
 .modules-left {
-    padding: 7px;
+    padding: 0px;
     margin: 5 0 5 10;
-    border-radius:10px;
-    background: rgba(43, 48, 59, 0.5);
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
 }
 
 #workspaces {
-    border-radius:10px;
+    border-radius:15px;
     padding: 0px 5px;
-    background-color: rgba(43, 48, 59, 0.5);
+    margin: 5px 0px 1px 2px;
+    background-color: rgba(47, 50, 53, 0.5);
+    border-bottom-style:solid;
+    border-width:1px;
+    border-color:rgb(254, 225, 167) 
 }
 #workspaces button.empty {
     color: rgba(225, 255, 255, 0.1);
@@ -49,42 +47,72 @@ window#waybar{
     box-shadow: inset 0 -3px #ffffff;
 }
 #custom-power{
- padding-left: 10px;
+  padding:10px 3px 10px 10px;
+  border-radius:15px;
+  background: rgba(43, 48, 59, 0.5);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+  margin: 0px 0px 1px 2px;
+  border-bottom-style:solid;
+    border-width:1px;
+    border-color:rgb(254, 225, 167) 
+
 
 }
-#battery{
-  padding: 0px 7px;
+#battery, #clock, #backlight, #network{
+  padding: 10px;
+  border-radius:15px;
+  background: rgba(43, 48, 59, 0.5);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+  margin: 0px 2px 1px 2px;
+border-bottom-style:solid;
+    border-width:1px;
+    border-color:rgb(254, 225, 167) 
+
+
 }
-#clock{
-  padding: 0px 7px;
-}
-#backlight{
-  padding: 0px 7px;
-}
-#network{
-  padding: 0px 7px;
-}
-#temperature{
-  padding: 0px 7px;
-}
-#cpu{
-  padding: 0px 7px;
-}
-#memory{
-  padding: 0px 7px;
-}
-#disk{
-  padding: 0px 7px;
+#temperature, #cpu, #memory, #disk, #custom-expand{
+  padding:7px;
+  border-radius:15px;
+  background: rgba(43, 48, 59, 0.5);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+  margin: 0px 2px 1px 2px;
+border-bottom-style:solid;
+    border-width:1px;
+    border-color:rgb(254, 225, 167) 
+
 }
 #pulseaudio{
-  padding: 0px 7px;
+  padding:10px;
+  border-radius:15px;
+  background: rgba(43, 48, 59, 0.5);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+  margin: 0px 2px 1px 2px;
+border-bottom-style:solid;
+    border-width:1px;
+    border-color:rgb(254, 225, 167) 
+
 }
 #keyboard-state{
- padding: 0px 7px;
+  padding:10px;
+  border-radius:15px;
+  background: rgba(43, 48, 59, 0.5);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+  margin: 0px 2px 1px 2px;
+border-bottom-style:solid;
+    border-width:1px;
+    border-color:rgb(254, 225, 167) 
+
 }
 #tray{
-  padding: 0px 7px;
-  
+  padding:10px;
+  margin:0px 2px 1px 2px;
+  border-radius:15px;
+  background: rgba(43, 48, 59, 0.5);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+border-bottom-style:solid;
+    border-width:1px;
+    border-color:rgb(254, 225, 167) 
+
 }
 #mode{
   padding: 0px 7px;
