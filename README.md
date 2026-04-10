@@ -23,14 +23,15 @@ git clone https://aur.archlinux.org/yay.git
 ```
 ```bash
 cd yay
+sudo pacman -S base-devel
 makepkg -si 
 ```
 ### apps I use
 ```bash
-sudo pacman -S --needed hyprpaper waybar hyprlock hypridle keyd mpd rmpc neovim rofi swaync qt6ct tmux wev wl-clip-persist kvantum networkmanager network-manager-applet nemo brightnessctl hyprpicker gimp gmic gimp-plugin-gmic ghostscript gsfonts mypaint-brushes imagemagick nodejs npm clang docker xorg-xhost ufw openssh unzip git base-devel fastfetch stow noto-fonts-emoji usbutils libreoffice-fresh zip kicad kicad-library kicad-library-3d virt-manager qemu-desktop edk2-ovmf sl firefox discord kitty cmake
+sudo pacman -S --needed hyprpaper waybar hyprlock hypridle keyd mpd rmpc neovim rofi swaync qt6ct tmux wev wl-clip-persist kvantum networkmanager network-manager-applet nemo brightnessctl hyprpicker gimp gmic gimp-plugin-gmic ghostscript gsfonts mypaint-brushes imagemagick nodejs npm clang docker xorg-xhost ufw openssh unzip git base-devel fastfetch stow noto-fonts-emoji usbutils libreoffice-fresh zip kicad kicad-library kicad-library-3d virt-manager qemu-desktop edk2-ovmf sl firefox discord kitty cmake zoxide zsh
 ```
 ```bash
-yay -S wlogout hyprshot gimp-plugin-resynthesizer docker-buildx webapp-manager zen-browser-bin spotify pavucontrol
+yay -S wlogout hyprshot gimp-plugin-resynthesizer docker-buildx webapp-manager zen-browser-bin spotify pavucontrol vesktop walker elephant-all
 ```
 
 ## Git 
@@ -91,4 +92,12 @@ rm -rf ~/.config/nvim
 rm -rf ~/.local/share/nvim
 rm -rf ~/.local/state/nvim
 rm -rf ~/.cache/nvim
+```
+
+## Switching from Bash to zsh
+```
+sudo pacman -S zsh
+```
+```
+chsh -s $(which zsh)
 ```
