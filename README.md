@@ -28,10 +28,10 @@ makepkg -si
 ```
 ### apps I use
 ```bash
-sudo pacman -S --needed hyprpaper waybar hyprlock hypridle keyd mpd rmpc neovim rofi swaync qt6ct tmux wev wl-clip-persist kvantum networkmanager network-manager-applet nemo brightnessctl hyprpicker gimp gmic gimp-plugin-gmic ghostscript gsfonts mypaint-brushes imagemagick nodejs npm clang docker xorg-xhost ufw openssh unzip git base-devel fastfetch stow noto-fonts-emoji usbutils libreoffice-fresh zip kicad kicad-library kicad-library-3d virt-manager qemu-desktop edk2-ovmf sl firefox discord kitty cmake zoxide zsh
+sudo pacman -S --needed hyprpaper waybar hyprlock hypridle keyd mpd rmpc neovim rofi swaync qt6ct tmux wev wl-clip-persist kvantum networkmanager network-manager-applet nemo brightnessctl hyprpicker gimp gmic gimp-plugin-gmic ghostscript gsfonts mypaint-brushes imagemagick nodejs npm clang docker xorg-xhost ufw openssh unzip git base-devel fastfetch stow noto-fonts-emoji usbutils libreoffice-fresh zip kicad kicad-library kicad-library-3d virt-manager qemu-desktop edk2-ovmf sl firefox discord kitty cmake zoxide zsh steam bluetui
 ```
 ```bash
-yay -S wlogout hyprshot gimp-plugin-resynthesizer docker-buildx webapp-manager zen-browser-bin spotify pavucontrol vesktop walker elephant-all
+yay -S wlogout hyprshot gimp-plugin-resynthesizer docker-buildx webapp-manager zen-browser-bin spotify pavucontrol vesktop walker elephant-all heroic-games-launcher
 ```
 
 ## Git 
@@ -101,3 +101,23 @@ sudo pacman -S zsh
 ```
 chsh -s $(which zsh)
 ```
+
+## My Fonts
+```
+ttf-bigblueterminal-nerd
+```
+
+
+## Ohmyzsh
+``` bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+## Zinit
+```
+bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+zinit self-update
+```
+
+## ohmyposh
+curl -s https://ohmyposh.dev/install.sh | bash -s
