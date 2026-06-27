@@ -101,3 +101,8 @@ sudo pacman -S zsh
 ```
 chsh -s $(which zsh)
 ```
+## Lazy Vim 
+```bash
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+```
