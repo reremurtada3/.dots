@@ -101,6 +101,10 @@ sudo pacman -S zsh
 ```
 chsh -s $(which zsh)
 ```
+test with:
+```bash
+echo $SHELL
+```
 ## Lazy Vim 
 ```bash
 git clone https://github.com/LazyVim/starter ~/.config/nvim
