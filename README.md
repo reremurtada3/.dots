@@ -70,6 +70,10 @@ locale-gen
 kb_options=grp:win_space_toggle
 ```
 
+## Listing fonts
+```bash
+fc-list : family | sort -u
+```
 ## TPM
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
